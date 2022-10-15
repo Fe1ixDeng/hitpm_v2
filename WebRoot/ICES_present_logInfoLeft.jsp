@@ -20,34 +20,34 @@
 	%>
 	<table border="1" style="width: 100%; "  target="aframe">
 	  <tr>
-	    <th>日志总体信息</th>
+	    <th>Overall log information</th>
 	  </tr>
 	  <tr>
-	    <td>流程：<%out.print(log);%>
+	    <td>Process：<%out.print(log);%>
 	    </td>
 	  </tr>
 	  	  <tr>
-	    <td>实例：<%out.print(traceNum);%>
+	    <td>Instance：<%out.print(traceNum);%>
 	    </td>
 	  </tr>
 	  	  <tr>
-	    <td>事件：<%out.print(eventNum);%>
+	    <td>Event：<%out.print(eventNum);%>
 	    </td>
 	  </tr>
 	  	  <tr>
-	    <td>事件种类：<%out.print(eventKind);%>
+	    <td>Event Type：<%out.print(eventKind);%>
 	    </td>
 	  </tr>
 	  	  <tr>
-	    <td>参与者：<%out.print(actor);%>
+	    <td>Actor：<%out.print(actor);%>
 	    </td>
 	  </tr>
 	  	  <tr>
-	    <td>开始时间：<%out.print(startTime);%>
+	    <td>Start time：<%out.print(startTime);%>
 	    </td>
 	  </tr>
 	  	  <tr>
-	    <td>结束时间：<%out.print(endTime);%>
+	    <td>End time：<%out.print(endTime);%>
 	    </td>
 	  </tr>
 	 </table>

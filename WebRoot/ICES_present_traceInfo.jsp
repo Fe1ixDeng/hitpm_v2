@@ -22,15 +22,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
 
     <table border="1" style="width: 100%; " data-genuitec-lp-enabled="false" data-genuitec-file-id="wc3-14" data-genuitec-path="/HITpm/WebRoot/pmResults/Trace.jsp">
-      	<caption style="font-size: 25px; " >流程信息</caption>
+      	<caption style="font-size: 25px; " >Trace Information</caption>
 		<tr>
-		  <td align="center">流程实例类型</td>
-		  <td align="center">数量</td>
-		  <td align="center">占流程总数的比例</td>
+		  <td align="center">Process Instance Type</td>
+		  <td align="center">Quantity</td>
+		  <td align="center">percent of the total number of processes</td>
 		</tr>
     	<%
     	ICES_beans_trace.printTraceTable(out, ICES_beans_trace.getLog());
-    	//ICES_beans_trace.tracesMemory(out, ICES_beans_trace.getLog());
     	%>
     </table>
   </body>

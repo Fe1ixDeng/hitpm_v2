@@ -29,13 +29,13 @@
 	<table border="1" style="width: 100%;">
 	<caption style="font-size: 25px; " >活动-参与者-价值</caption>
 		<tr>
-		  <td>活动</td>
+		  <td>Activity</td>
 
-		  <td>参与者</td>
+		  <td>Actor</td>
 
-		  <td>输入价值</td>
+		  <td>Input Value</td>
 
-		  <td>输出价值</td>
+		  <td>Output Value</td>
 
 		</tr>
 		<%
