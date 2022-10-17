@@ -91,7 +91,7 @@
 											System.out.println(3);
 
     	    	    	    			
-    	    	    	    			String fp = SERVLET_CONTEXT_PATH+"upload/Sample.xes";
+    	    	    	    			String fp = SERVLET_CONTEXT_PATH+"upload/Sample.xes";	//win or eclipse改成\\?不确定
 											System.out.println(4);
 
 											java.io.FileInputStream file1 = ICES_beans_parser.convert(fp);
@@ -127,8 +127,8 @@
 
     	    	    	    			}catch(Exception ex){
 											ex.printStackTrace();
-    	    	    	    		out.println("上传文件超过了限制条件，上传失败!<br>");
-    	    	    	    		out.println("错误原因：<br>"+ex.toString());
+    	    	    	    		out.println("Upload file exceeds the limit, upload failed!<br>");
+    	    	    	    		out.println("error reason:<br>"+ex.toString());
     	    	    	    			}
     	%>
     	

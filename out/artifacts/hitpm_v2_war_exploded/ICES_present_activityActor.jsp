@@ -16,11 +16,11 @@
 	
 	%>
 		<table border="1" style="width: 100%;">
-		<caption style="font-size: 25px; " >活动-参与者</caption>
+		<caption style="font-size: 25px; " >Activities - Actors</caption>
 		<tr>
-		  <th>活动</th>
+		  <th>Activity</th>
 		  
-		  <th>参与者</th>
+		  <th>Actor</th>
 		  
 		</tr>
 		<%

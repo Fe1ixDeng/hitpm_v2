@@ -33,14 +33,6 @@ public class ShowVarient_String {
 		this.originProcesses = originProcesses;
 	}
 	public static void varientSprint(JspWriter out,XLog log, List<String> originProcesses)throws Exception{
-	//	out.println("<tr>"+"<td>"+ originProcesses +"</td>"+"</tr>");
-
-    	// List<String> originProcesses = new ArrayList<>();
-    	 //originProcesses.add("Apply Repair-->User Identification-->Intelligent Response-->Manual Interaction-->Release Order-->Order Assignment-->Repair-->Test Repair-->Restart Repair-->Repair-->Test Repair-->Restart Repair-->Repair-->Test Repair-->Success-->Service Evaluation-->Archive");
- //   	 originProcesses.add("Apply Repair-->User Identification-->Intelligent Response-->Manual Interaction-->Release Order-->Order Assignment-->Repair-->Test Repair-->Success-->Service Evaluation-->Archive");
- //   	 originProcesses.add("Apply Repair-->User Identification-->Intelligent Response-->Manual Interaction-->Service Evaluation-->Archive");
-//    	 originProcesses.add("Apply Repair-->User Identification-->Intelligent Response-->Manual Interaction-->Release Order-->Order Assignment-->Repair-->Test Repair-->Restart Repair-->Repair-->Test Repair-->Success-->Service Evaluation-->Archive");
-//    	 originProcesses.add("Apply Repair-->User Identification-->Intelligent Response-->Manual Interaction-->Release Order-->Order Assignment-->Repair-->Test Repair-->Restart Repair-->Repair-->Test Repair-->Restart Repair-->Repair-->Test Repair-->Renew-->Service Evaluation-->Archive");
 
     	        //执行功能
     	        MineCircularRelationship mineCircularRelationship = new MineCircularRelationship();
@@ -49,8 +41,6 @@ public class ShowVarient_String {
     	            String variant_String = mineCircularRelationship.showVariant(originProcesses.get(i));
     	            out.println("<tr>"+"<td>"+ variant_String +"</td>"+"</tr>");
     	        }
-
-//
    
 	}
     
