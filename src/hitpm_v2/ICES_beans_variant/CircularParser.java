@@ -99,28 +99,23 @@ public class CircularParser {
                 }
             }
         }else {
-            //调换顺序
-            int indexOfFakeCircularActivity = markedList.indexOf(fakeCircularActivity);
-            int indexOfFirstCircularActivity = min;
-            markedList.add(indexOfFirstCircularActivity, fakeCircularActivity);
-            markedList.remove(indexOfFakeCircularActivity + 1);
-            circularList.add(fakeCircularActivity.getName());
+            //调换顺序,20221915组会决定不调换顺序
 
             //根据是否是循环元素、是否是循环元素的首和尾，做出对应的输出
             for (Activity activity : markedList) {
                 if(circularList.contains(activity.getName())){
-                    if(circularList.indexOf(activity.getName()) == circularList.size()-2){
-                        markedStringBuffer.append(activity.getName());
-                        markedStringBuffer.append("]");
-                    } else if (circularList.indexOf(activity.getName()) == circularList.size()-1) {
+                    if (circularList.indexOf(activity.getName()) == 0) {
                         markedStringBuffer.append("[");
-                        markedStringBuffer.append("(");
                         markedStringBuffer.append(activity.getName());
-                        markedStringBuffer.append(")");
                     }else{
                         markedStringBuffer.append(activity.getName());
                     }
-                }else{
+                } else if (activity.isFakeCircular()) {
+                    markedStringBuffer.append("(");
+                    markedStringBuffer.append(activity.getName());
+                    markedStringBuffer.append(")");
+                    markedStringBuffer.append("]");
+                }else {
                     markedStringBuffer.append(activity.getName());
                 }
 
