@@ -17,8 +17,6 @@
 		</tr>
     	<%
     	ICES_beans_variant.varientSprint(out,ICES_beans_variant.getLog(),ICES_beans_trace.printTraceTable1(out,ICES_beans_trace.getLog()));
-    	//out.println(ICES_beans_trace.printTraceTable1(out,ICES_beans_trace.getLog()));
-    	//ICES_beans_trace.printTraceTable1(out,ICES_beans_trace.getLog());
     	%>
     </table>
 </body>
