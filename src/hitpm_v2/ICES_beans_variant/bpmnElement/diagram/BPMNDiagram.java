@@ -3,7 +3,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 public class BPMNDiagram {
     @JacksonXmlProperty(isAttribute = true)
     private String id;
-    @JacksonXmlProperty(localName = "bpmndi:bpmnPlane")
+    @JacksonXmlProperty(localName = "bpmndi:BPMNPlane")
     BPMNPlane bpmnPlane = new BPMNPlane();
 
     public BPMNDiagram(String id) {

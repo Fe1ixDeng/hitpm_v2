@@ -2,9 +2,9 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 public class BPMNShape {
     @JacksonXmlProperty(isAttribute = true)
-    private String bpmnElement;
-    @JacksonXmlProperty(isAttribute = true)
     private String id;
+    @JacksonXmlProperty(isAttribute = true)
+    private String bpmnElement;
     @JacksonXmlProperty(localName = "omgdc:Bounds")
     private Bounds bounds;
 

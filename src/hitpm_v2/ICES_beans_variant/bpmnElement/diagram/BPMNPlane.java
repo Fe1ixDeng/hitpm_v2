@@ -6,16 +6,16 @@ import java.util.List;
 
 public class BPMNPlane {
     @JacksonXmlProperty(isAttribute = true)
-    private String bpmnElement;
+    private String id = "BPMNPlane_bplane";
     @JacksonXmlProperty(isAttribute = true)
-    private String id;
+    private String bpmnElement = "bplane";
 
     @JacksonXmlElementWrapper(useWrapping = false)
-    @JacksonXmlProperty(localName = "bpmndi:bpmnShape")
-    private List<BPMNShape> bpmnShape = new ArrayList<>();
-    @JacksonXmlElementWrapper(useWrapping = false)
-    @JacksonXmlProperty(localName = "bpmndi:bpmnEdge")
+    @JacksonXmlProperty(localName = "bpmndi:BPMNEdge")
     private List<BPMNEdge> bpmnEdge = new ArrayList<>();
+    @JacksonXmlElementWrapper(useWrapping = false)
+    @JacksonXmlProperty(localName = "bpmndi:BPMNShape")
+    private List<BPMNShape> bpmnShape = new ArrayList<>();
 
     public String getBpmnElement() {
         return bpmnElement;

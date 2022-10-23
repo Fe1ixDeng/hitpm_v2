@@ -9,8 +9,8 @@ public class Process {
     private String id;
     @JacksonXmlProperty(isAttribute = true)
     private String name;
-    @JacksonXmlProperty(isAttribute = true)
-    private Boolean isExecutable = true;
+//    @JacksonXmlProperty(isAttribute = true)
+//    private Boolean isExecutable = true;
 
     private StartEvent startEvent;
     private EndEvent endEvent;
@@ -50,13 +50,13 @@ public class Process {
         this.sequenceFlow = sequenceFlow;
     }
 
-    public Boolean getExecutable() {
-        return isExecutable;
-    }
-
-    public void setExecutable(Boolean executable) {
-        isExecutable = executable;
-    }
+//    public Boolean getExecutable() {
+//        return isExecutable;
+//    }
+//
+//    public void setExecutable(Boolean executable) {
+//        isExecutable = executable;
+//    }
 
     public StartEvent getStartEvent() {
         return startEvent;

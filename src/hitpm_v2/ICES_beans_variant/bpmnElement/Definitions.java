@@ -27,6 +27,10 @@ public class Definitions {
     private String expressionLanguage="http://www.w3.org/1999/XPath";
     @JacksonXmlProperty(isAttribute = true)
     private String targetNamespace="http://www.activiti.org/processdef";
+    @JacksonXmlProperty(isAttribute = true)
+    private String exporter="Camunda Modeler";
+    @JacksonXmlProperty(isAttribute = true)
+    private String exporterVersion="5.0.0";
 
     public Process getProcess() {
         return process;

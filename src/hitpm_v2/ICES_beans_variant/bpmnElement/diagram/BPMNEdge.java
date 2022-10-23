@@ -6,9 +6,9 @@ import java.util.List;
 
 public class BPMNEdge {
     @JacksonXmlProperty(isAttribute = true)
-    private String bpmnElement;
-    @JacksonXmlProperty(isAttribute = true)
     private String id;
+    @JacksonXmlProperty(isAttribute = true)
+    private String bpmnElement;
     @JacksonXmlElementWrapper(useWrapping = false)
     @JacksonXmlProperty(localName = "omgdi:waypoint")
     private List<waypoint> waypointList = new ArrayList<>();
