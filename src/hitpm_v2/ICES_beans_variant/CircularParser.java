@@ -86,7 +86,7 @@ public class CircularParser {
                         markedStringBuffer.append("(");
                         markedStringBuffer.append(activity.getName());
                         markedStringBuffer.append(")");
-                        markedStringBuffer.append("]");
+                        markedStringBuffer.append("]*3");
                     }else{
                         markedStringBuffer.append(activity.getName());
                     }
@@ -114,7 +114,7 @@ public class CircularParser {
                     markedStringBuffer.append("(");
                     markedStringBuffer.append(activity.getName());
                     markedStringBuffer.append(")");
-                    markedStringBuffer.append("]");
+                    markedStringBuffer.append("]*2");
                 }else {
                     markedStringBuffer.append(activity.getName());
                 }

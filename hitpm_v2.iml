@@ -17,6 +17,13 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/hitpm_v2/ICES_beans_variant/bpmnElement" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/hitpm_v2/ICES_beans_variant/bpmnElement/diagram" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/hitpm_v2/ICES_beans_variant/bpmnElement/process" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/hitpm_v2/ICES_beans_variant/list" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/hitpm_v2/ICES_beans_variant/list/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/hitpm_v2/ICES_beans_variant/translator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/hitpm_v2/ICES_beans_variant/writeXML" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -38,5 +45,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="vavr-1.0.0-alpha-4" level="project" />
   </component>
 </module>
