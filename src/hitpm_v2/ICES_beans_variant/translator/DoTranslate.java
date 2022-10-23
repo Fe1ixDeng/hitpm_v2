@@ -12,7 +12,7 @@ public class DoTranslate {
         definitions.setProcess(process);
         definitions.setBpmnDiagram(bpmnDiagram);
 
-        double defaultY = 300.0;    //递增250
+        double defaultY = 300.0;
         int i = 1;  //id和name的分配器
         int firstCircular = 9999;
         double xOfFirstCircular = 100;
