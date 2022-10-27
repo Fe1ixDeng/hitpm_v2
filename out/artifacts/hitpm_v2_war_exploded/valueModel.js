@@ -44,227 +44,227 @@ var Str = `<?xml version="1.0" encoding="UTF-8"?>
     <bpmn2:sequenceFlow id="ArchiveEnd" sourceRef="Archive" targetRef="End"></bpmn2:sequenceFlow>
     <bpmn2:textAnnotation id="ManualInteractionvalue">
       <bpmn2:text>Staff2
--杈撳叆浠峰��(ts:[AvgTime: 19 m 26 s 629 ms ]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[address3, address2, address1]expr:[]profit:[0, 555.21])
+-输入价值(ts:[AvgTime: 19 m 26 s 629 ms ]expr:[]profit:[])
+-输出价值(ts:[address3, address2, address1]expr:[]profit:[0, 555.21])
 Staff3
--杈撳叆浠峰��(ts:[AvgTime: 20 m 17 s 672 ms ]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[address3, address2, address1]expr:[]profit:[0, 89.12, 522.7])
+-输入价值(ts:[AvgTime: 20 m 17 s 672 ms ]expr:[]profit:[])
+-输出价值(ts:[address3, address2, address1]expr:[]profit:[0, 89.12, 522.7])
 Staff1
--杈撳叆浠峰��(ts:[AvgTime: 21 m 12 s 60 ms ]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[address3, address2, address1]expr:[]profit:[0, 54.19, 803.83, 793.49, 312.36])
+-输入价值(ts:[AvgTime: 21 m 9 s 386 ms ]expr:[]profit:[])
+-输出价值(ts:[address3, address2, address1]expr:[]profit:[0, 54.19, 803.83, 793.49, 312.36])
 Customer
--杈撳叆浠峰��(ts:[AvgTime: 20 m 16 s 26 ms ]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[AvgTime: 20 m 15 s 159 ms ]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="ManualInteraction2value" sourceRef="ManualInteraction" targetRef="ManualInteractionvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="Archivevalue">
       <bpmn2:text>System
--杈撳叆浠峰��(ts:[]expr:[缁翠慨娆℃暟:3, 缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1, 缁翠慨娆℃暟:0]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Fixed]profit:[])
+-输入价值(ts:[]expr:[维修次数:3, 维修次数:1, 维修次数:2, 维修次数:0]profit:[])
+-输出价值(ts:[]expr:[Fixed]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="Archive2value" sourceRef="Archive" targetRef="Archivevalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="ReleaseOrdervalue">
       <bpmn2:text>Staff2
--杈撳叆浠峰��(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Staff3
--杈撳叆浠峰��(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Staff1
--杈撳叆浠峰��(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="ReleaseOrder2value" sourceRef="ReleaseOrder" targetRef="ReleaseOrdervalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="OrderAssignmentvalue">
       <bpmn2:text>Engineer7
--杈撳叆浠峰��(ts:[缃戠偣:3, 缃戠偣:2, 缃戠偣:1, 缃戠偣:4]expr:[Handbook]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Repairement, Fastening, Adjustment, Replenishment, Repairing, Cleaning]profit:[])
+-输入价值(ts:[网点:4, 网点:3, 网点:2, 网点:1]expr:[Handbook]profit:[])
+-输出价值(ts:[]expr:[Repairement, Adjustment, Fasten, Replenishment, Clean, Reweld]profit:[])
 Engineer6
--杈撳叆浠峰��(ts:[缃戠偣:3, 缃戠偣:2, 缃戠偣:1, 缃戠偣:4]expr:[Handbook]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Repairement, Fastening, Adjustment, Replenishment, Cleaning, Repairing]profit:[])
+-输入价值(ts:[网点:4, 网点:3, 网点:2, 网点:1]expr:[Handbook]profit:[])
+-输出价值(ts:[]expr:[Repairement, Adjustment, Fasten, Replenishment, Clean, Reweld]profit:[])
 Engineer5
--杈撳叆浠峰��(ts:[缃戠偣:3, 缃戠偣:2, 缃戠偣:1, 缃戠偣:4]expr:[Handbook]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Repairement, Adjustment, Fastening, Replenishment, Repairing, Cleaning]profit:[])
+-输入价值(ts:[网点:4, 网点:3, 网点:2, 网点:1]expr:[Handbook]profit:[])
+-输出价值(ts:[]expr:[Repairement, Adjustment, Fasten, Replenishment, Clean, Reweld]profit:[])
 Engineer4
--杈撳叆浠峰��(ts:[缃戠偣:3, 缃戠偣:2, 缃戠偣:1, 缃戠偣:4]expr:[Handbook]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Repairement, Fastening, Adjustment, Replenishment, Repairing, Cleaning]profit:[])
+-输入价值(ts:[网点:4, 网点:3, 网点:2, 网点:1]expr:[Handbook]profit:[])
+-输出价值(ts:[]expr:[Repairement, Adjustment, Replenishment, Fasten, Clean, Reweld]profit:[])
 Engineer3
--杈撳叆浠峰��(ts:[缃戠偣:3, 缃戠偣:2, 缃戠偣:1, 缃戠偣:4]expr:[Handbook]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Repairement, Adjustment, Fastening, Replenishment, Repairing, Cleaning]profit:[])
+-输入价值(ts:[网点:4, 网点:3, 网点:2, 网点:1]expr:[Handbook]profit:[])
+-输出价值(ts:[]expr:[Repairement, Adjustment, Fasten, Replenishment, Clean, Reweld]profit:[])
 Engineer2
--杈撳叆浠峰��(ts:[缃戠偣:3, 缃戠偣:2, 缃戠偣:1, 缃戠偣:4]expr:[Handbook]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Repairement, Adjustment, Fastening, Replenishment, Cleaning, Repairing]profit:[])
+-输入价值(ts:[网点:4, 网点:3, 网点:2, 网点:1]expr:[Handbook]profit:[])
+-输出价值(ts:[]expr:[Repairement, Adjustment, Replenishment, Fasten, Clean, Reweld]profit:[])
 Engineer1
--杈撳叆浠峰��(ts:[缃戠偣:3, 缃戠偣:2, 缃戠偣:1, 缃戠偣:4]expr:[Handbook]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[Repairement, Adjustment, Fastening, Replenishment, Repairing, Cleaning]profit:[])
+-输入价值(ts:[网点:4, 网点:3, 网点:2, 网点:1]expr:[Handbook]profit:[])
+-输出价值(ts:[]expr:[Repairement, Adjustment, Fasten, Replenishment, Clean, Reweld]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="OrderAssignment2value" sourceRef="OrderAssignment" targetRef="OrderAssignmentvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="ServiceEvaluationvalue">
       <bpmn2:text>Customer
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="ServiceEvaluation2value" sourceRef="ServiceEvaluation" targetRef="ServiceEvaluationvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="Successvalue">
       <bpmn2:text>Customer
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer7
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[鏀粯: 0, 鏀粯: 92.76, 鏀粯: 803.83])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[支付: 92.76, 支付: 0, 支付: 803.83])
 Engineer6
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[鏀粯: 0, 鏀粯: 555.21, 鏀粯: 522.7])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[支付: 522.7, 支付: 0, 支付: 555.21])
 Engineer5
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[鏀粯: 0, 鏀粯: 793.49])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[支付: 0, 支付: 793.49])
 Engineer4
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[鏀粯: 0])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[支付: 0])
 Engineer3
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[鏀粯: 0, 鏀粯: 312.36])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[支付: 0, 支付: 312.36])
 Engineer2
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[鏀粯: 0, 鏀粯: 89.12])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[支付: 0, 支付: 89.12])
 Engineer1
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[鏀粯: 0, 鏀粯: 54.19])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[支付: 0, 支付: 54.19])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="Success2value" sourceRef="Success" targetRef="Successvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="RestartRepairvalue">
       <bpmn2:text>Engineer7
--杈撳叆浠峰��(ts:[]expr:[閲嶆柊缁翠慨鐨勬鏁�:1, 閲嶆柊缁翠慨鐨勬鏁�:2]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[重新维修的次数:1, 重新维修的次数:2]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer6
--杈撳叆浠峰��(ts:[]expr:[閲嶆柊缁翠慨鐨勬鏁�:1, 閲嶆柊缁翠慨鐨勬鏁�:2]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[重新维修的次数:1, 重新维修的次数:2]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer5
--杈撳叆浠峰��(ts:[]expr:[閲嶆柊缁翠慨鐨勬鏁�:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[重新维修的次数:1]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer4
--杈撳叆浠峰��(ts:[]expr:[閲嶆柊缁翠慨鐨勬鏁�:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[重新维修的次数:1]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer3
--杈撳叆浠峰��(ts:[]expr:[閲嶆柊缁翠慨鐨勬鏁�:1, 閲嶆柊缁翠慨鐨勬鏁�:2]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[重新维修的次数:1, 重新维修的次数:2]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer2
--杈撳叆浠峰��(ts:[]expr:[閲嶆柊缁翠慨鐨勬鏁�:1, 閲嶆柊缁翠慨鐨勬鏁�:2]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[重新维修的次数:1, 重新维修的次数:2]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer1
--杈撳叆浠峰��(ts:[]expr:[閲嶆柊缁翠慨鐨勬鏁�:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[重新维修的次数:1]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="RestartRepair2value" sourceRef="RestartRepair" targetRef="RestartRepairvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="IntelligentResponsevalue">
       <bpmn2:text>Customer
--杈撳叆浠峰��(ts:[AvgTime: 13 m 11 s 975 ms ]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[AvgTime: 13 m 12 s 277 ms ]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 ChatRobot
--杈撳叆浠峰��(ts:[AvgTime: 13 m 11 s 975 ms ]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[AvgTime: 13 m 12 s 277 ms ]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="IntelligentResponse2value" sourceRef="IntelligentResponse" targetRef="IntelligentResponsevalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="TestRepairvalue">
       <bpmn2:text>Engineer7
--杈撳叆浠峰��(ts:[AvgTime: 13 m 59 s 634 ms ]expr:[缁翠慨娆℃暟:3, 缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[unfixed, fixed]profit:[])
+-输入价值(ts:[AvgTime: 14 m 7 s 900 ms ]expr:[维修次数:3, 维修次数:1, 维修次数:2]profit:[])
+-输出价值(ts:[]expr:[unfixed, fixed]profit:[])
 Engineer6
--杈撳叆浠峰��(ts:[AvgTime: 14 m 17 s 892 ms ]expr:[缁翠慨娆℃暟:3, 缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[unfixed, fixed]profit:[])
+-输入价值(ts:[AvgTime: 14 m 17 s 892 ms ]expr:[维修次数:3, 维修次数:1, 维修次数:2]profit:[])
+-输出价值(ts:[]expr:[unfixed, fixed]profit:[])
 Engineer5
--杈撳叆浠峰��(ts:[AvgTime: 12 m 5 s 257 ms ]expr:[缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[unfixed, fixed]profit:[])
+-输入价值(ts:[AvgTime: 12 m 5 s 257 ms ]expr:[维修次数:1, 维修次数:2]profit:[])
+-输出价值(ts:[]expr:[unfixed, fixed]profit:[])
 Engineer4
--杈撳叆浠峰��(ts:[AvgTime: 13 m 31 s 483 ms ]expr:[缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[unfixed, fixed]profit:[])
+-输入价值(ts:[AvgTime: 13 m 31 s 483 ms ]expr:[维修次数:1, 维修次数:2]profit:[])
+-输出价值(ts:[]expr:[unfixed, fixed]profit:[])
 Engineer3
--杈撳叆浠峰��(ts:[AvgTime: 12 m 45 s 840 ms ]expr:[缁翠慨娆℃暟:3, 缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[unfixed, fixed]profit:[])
+-输入价值(ts:[AvgTime: 12 m 45 s 840 ms ]expr:[维修次数:3, 维修次数:1, 维修次数:2]profit:[])
+-输出价值(ts:[]expr:[unfixed, fixed]profit:[])
 Engineer2
--杈撳叆浠峰��(ts:[AvgTime: 13 m 21 s 43 ms ]expr:[缁翠慨娆℃暟:3, 缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[unfixed, fixed]profit:[])
+-输入价值(ts:[AvgTime: 13 m 21 s 43 ms ]expr:[维修次数:3, 维修次数:1, 维修次数:2]profit:[])
+-输出价值(ts:[]expr:[unfixed, fixed]profit:[])
 Engineer1
--杈撳叆浠峰��(ts:[AvgTime: 13 m 27 s 109 ms ]expr:[缁翠慨娆℃暟:2, 缁翠慨娆℃暟:1]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[unfixed, fixed]profit:[])
+-输入价值(ts:[AvgTime: 13 m 27 s 109 ms ]expr:[维修次数:1, 维修次数:2]profit:[])
+-输出价值(ts:[]expr:[unfixed, fixed]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="TestRepair2value" sourceRef="TestRepair" targetRef="TestRepairvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="Repairvalue">
       <bpmn2:text>Engineer7
--杈撳叆浠峰��(ts:[AvgTime: 33 m 51 s 715 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[inStock]profit:[])
+-输入价值(ts:[AvgTime: 34 m 22 s ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
+-输出价值(ts:[]expr:[inStock]profit:[])
 Engineer6
--杈撳叆浠峰��(ts:[AvgTime: 31 m 30 s 345 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[inStock]profit:[])
+-输入价值(ts:[AvgTime: 31 m 30 s 345 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
+-输出价值(ts:[]expr:[inStock]profit:[])
 Engineer5
--杈撳叆浠峰��(ts:[AvgTime: 32 m 58 s 338 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[inStock]profit:[])
+-输入价值(ts:[AvgTime: 32 m 58 s 338 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
+-输出价值(ts:[]expr:[inStock]profit:[])
 Engineer4
--杈撳叆浠峰��(ts:[AvgTime: 32 m 3 s 40 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[inStock]profit:[])
+-输入价值(ts:[AvgTime: 32 m 3 s 40 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
+-输出价值(ts:[]expr:[inStock]profit:[])
 Engineer3
--杈撳叆浠峰��(ts:[AvgTime: 32 m 20 s 411 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[inStock]profit:[])
+-输入价值(ts:[AvgTime: 32 m 20 s 411 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
+-输出价值(ts:[]expr:[inStock]profit:[])
 Engineer2
--杈撳叆浠峰��(ts:[AvgTime: 34 m 54 s 153 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[inStock]profit:[])
+-输入价值(ts:[AvgTime: 34 m 54 s 153 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
+-输出价值(ts:[]expr:[inStock]profit:[])
 Engineer1
--杈撳叆浠峰��(ts:[AvgTime: 35 m 31 s 800 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[inStock]profit:[])
+-输入价值(ts:[AvgTime: 35 m 31 s 800 ms ]expr:[P005, P004, P007, P006, P001, P003, P002, P010, P009, P008]profit:[])
+-输出价值(ts:[]expr:[inStock]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="Repair2value" sourceRef="Repair" targetRef="Repairvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="UserIdentificationvalue">
       <bpmn2:text>User System
--杈撳叆浠峰��(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[in, out])
+-输入价值(ts:[]expr:[ES1, ES0, ES3, ES2, ES5, ES4, ES7, ES6, ES9, ES8]profit:[])
+-输出价值(ts:[]expr:[]profit:[in, out])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="UserIdentification2value" sourceRef="UserIdentification" targetRef="UserIdentificationvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="ApplyRepairvalue">
       <bpmn2:text>Service Market Application
--杈撳叆浠峰��(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
+-输入价值(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
+-输出价值(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
 Customer
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Service APP Application
--杈撳叆浠峰��(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
+-输入价值(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
+-输出价值(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
 Electronic Warranty Card Application
--杈撳叆浠峰��(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
+-输入价值(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
+-输出价值(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
 Intelligent Network Device Application
--杈撳叆浠峰��(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
+-输入价值(ts:[]expr:[PT002, PT003, PT001, PT004, PT005]profit:[])
+-输出价值(ts:[]expr:[E005, E006, E007, E008, E009, E010, E001, E002, E003, E004]profit:[])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="ApplyRepair2value" sourceRef="ApplyRepair" targetRef="ApplyRepairvalue" associationDirection="None"></bpmn2:association>
     <bpmn2:textAnnotation id="Renewvalue">
       <bpmn2:text>Customer
--杈撳叆浠峰��(ts:[]expr:[]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[])
+-输入价值(ts:[]expr:[]profit:[])
+-输出价值(ts:[]expr:[]profit:[])
 Engineer7
--杈撳叆浠峰��(ts:[]expr:[PT003]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[0])
+-输入价值(ts:[]expr:[PT003]profit:[])
+-输出价值(ts:[]expr:[]profit:[0])
 Engineer6
--杈撳叆浠峰��(ts:[]expr:[PT005]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[0])
+-输入价值(ts:[]expr:[PT005]profit:[])
+-输出价值(ts:[]expr:[]profit:[0])
 Engineer3
--杈撳叆浠峰��(ts:[]expr:[PT002, PT004, PT005]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[0])
+-输入价值(ts:[]expr:[PT002, PT004, PT005]profit:[])
+-输出价值(ts:[]expr:[]profit:[0])
 Engineer2
--杈撳叆浠峰��(ts:[]expr:[PT004]profit:[])
--杈撳嚭浠峰��(ts:[]expr:[]profit:[0])
+-输入价值(ts:[]expr:[PT004]profit:[])
+-输出价值(ts:[]expr:[]profit:[0])
 </bpmn2:text>
     </bpmn2:textAnnotation>
     <bpmn2:association id="Renew2value" sourceRef="Renew" targetRef="Renewvalue" associationDirection="None"></bpmn2:association>
