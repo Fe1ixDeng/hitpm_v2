@@ -1,5 +1,8 @@
+package hitpm_v2.ICES_beans_variant.bpmnElement.process;
+
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,4 +92,5 @@ public class Process {
     public void setUserTask(List<UserTask> userTask) {
         this.userTask = userTask;
     }
+
 }

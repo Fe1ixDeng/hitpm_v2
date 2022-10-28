@@ -1,3 +1,5 @@
+package hitpm_v2.ICES_beans_variant.bpmnElement.diagram;
+
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 public class waypoint {

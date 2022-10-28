@@ -12,7 +12,7 @@
     <userTask id="p1_UserTask_6" name="Order Assignment"/>
     <userTask id="p1_UserTask_7" name="Repair"/>
     <userTask id="p1_UserTask_8" name="Test Repair"/>
-    <userTask id="p1_UserTask_Else" name="Restart Repair"/>
+    <userTask id="p1_UserTask_Else" name="Restart Repair*3"/>
     <userTask id="p1_UserTask_9" name="Success"/>
     <userTask id="p1_UserTask_10" name="Service Evaluation"/>
     <userTask id="p1_UserTask_11" name="Archive"/>

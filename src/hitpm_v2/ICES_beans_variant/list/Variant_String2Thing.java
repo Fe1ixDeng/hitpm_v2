@@ -1,3 +1,5 @@
+package hitpm_v2.ICES_beans_variant.list;
+
 import hitpm_v2.ICES_beans_variant.Activity;
 
 import java.util.ArrayList;

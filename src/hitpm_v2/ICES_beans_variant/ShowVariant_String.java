@@ -35,5 +35,12 @@ public class ShowVariant_String {
     	        }
    
 	}
+	public String variantBack(JspWriter out,XLog log, List<String> originProcesses)throws Exception{
+
+		//执行功能
+		MineCircularRelationship mineCircularRelationship = new MineCircularRelationship();
+		return mineCircularRelationship.showVariant(originProcesses.get(3));
+
+	}
 
 }

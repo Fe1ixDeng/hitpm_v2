@@ -1,5 +1,9 @@
+package hitpm_v2.ICES_beans_variant.bpmnElement;
+
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+import hitpm_v2.ICES_beans_variant.bpmnElement.diagram.BPMNDiagram;
+import hitpm_v2.ICES_beans_variant.bpmnElement.process.Process;
 
 @JacksonXmlRootElement(namespace = "http://www.omg.org/spec/BPMN/20100524/MODEL")
 public class Definitions {

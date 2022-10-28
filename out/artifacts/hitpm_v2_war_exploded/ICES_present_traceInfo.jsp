@@ -20,7 +20,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   
   <body>
-
     <table border="1" style="width: 100%; " data-genuitec-lp-enabled="false" data-genuitec-file-id="wc3-14" data-genuitec-path="/HITpm/WebRoot/pmResults/Trace.jsp">
       	<caption style="font-size: 25px; " >Trace Information</caption>
 		<tr>

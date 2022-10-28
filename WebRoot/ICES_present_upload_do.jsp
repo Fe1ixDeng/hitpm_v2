@@ -26,6 +26,8 @@
 <jsp:useBean id="ICES_beans_IM" class="hitpm_v2.ICES_beans_xes2bpmn.MyIMBean"/>
 <jsp:useBean id="ICES_beans_trace" class="hitpm_v2.ICES_beans_processLog.ICES_processLog_TraceStatistics" scope="session"/>
 <jsp:useBean id="ICES_beans_variant" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
+<jsp:useBean id="ICES_beans_variant1" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
+<jsp:useBean id="ICES_beans_trace1" class="hitpm_v2.ICES_beans_processLog.ICES_processLog_TraceStatistics" scope="session"/>
 
 
 <html>
@@ -116,6 +118,8 @@
 
     	    	    	    			ICES_beans_trace.setLog(log);
     	    	    	    	    	ICES_beans_variant.setLog(log);
+										ICES_beans_trace1.setLog(log);
+										ICES_beans_variant1.setLog(log);
 
 
     	    	    	    			ICES_beans_aa.setAaHash(ICES_activityActor_AaMiner.spvmMiner(out, log));

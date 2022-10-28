@@ -1,3 +1,5 @@
+package hitpm_v2.ICES_beans_variant.bpmnElement.process;
+
 public abstract class Element {
     private String id;
     private String name;

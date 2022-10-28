@@ -1,7 +1,10 @@
+package hitpm_v2.ICES_beans_variant.writeXML;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator;
+import hitpm_v2.ICES_beans_variant.bpmnElement.Definitions;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -12,7 +15,7 @@ public class XMLWriter {
     public void writeXmlFile(Definitions definitions) {
         ObjectMapper mapper = new XmlMapper().configure(ToXmlGenerator.Feature.WRITE_XML_DECLARATION, true);
         try {
-            File file = new File("src/hitpm_v2/ICES_beans_variant/testWrite.xml");
+            File file = new File("/Users/silver-brick/Documents/ProcessMining/项目20220905/备份测试的项目/hitpm_v2/src/hitpm_v2/ICES_beans_variant/testWrite.xml");
             if (!file.exists()) {file.createNewFile();}
 
             FileWriter fw = new FileWriter(file.getAbsoluteFile());

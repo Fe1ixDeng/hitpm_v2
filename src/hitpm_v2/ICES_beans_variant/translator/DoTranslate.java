@@ -1,11 +1,19 @@
+package hitpm_v2.ICES_beans_variant.translator;
+
 import hitpm_v2.ICES_beans_variant.Activity;
+import hitpm_v2.ICES_beans_variant.bpmnElement.Definitions;
+import hitpm_v2.ICES_beans_variant.bpmnElement.diagram.*;
+import hitpm_v2.ICES_beans_variant.bpmnElement.process.Process;
+import hitpm_v2.ICES_beans_variant.bpmnElement.process.*;
+import hitpm_v2.ICES_beans_variant.list.test.TestGenerateGraph;
 
 import java.util.List;
 
 public class DoTranslate {
-    public Definitions translate(){
+    public Definitions translate(String originalProcess){
         TestGenerateGraph testGenerateGraph = new TestGenerateGraph();
-        List<Activity> activityList = testGenerateGraph.getFullList();
+        List<Activity> activityList = testGenerateGraph.getFullList(originalProcess);
+        System.out.println(originalProcess);
         Definitions definitions = new Definitions();
         Process process = new Process("p1", "processOne");
         BPMNDiagram bpmnDiagram = new BPMNDiagram("bd1");
