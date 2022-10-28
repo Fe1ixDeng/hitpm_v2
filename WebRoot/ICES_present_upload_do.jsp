@@ -28,7 +28,14 @@
 <jsp:useBean id="ICES_beans_variant" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
 <jsp:useBean id="ICES_beans_variant1" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
 <jsp:useBean id="ICES_beans_trace1" class="hitpm_v2.ICES_beans_processLog.ICES_processLog_TraceStatistics" scope="session"/>
-
+<jsp:useBean id="ICES_beans_variant2" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
+<jsp:useBean id="ICES_beans_trace2" class="hitpm_v2.ICES_beans_processLog.ICES_processLog_TraceStatistics" scope="session"/>
+<jsp:useBean id="ICES_beans_variant3" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
+<jsp:useBean id="ICES_beans_trace3" class="hitpm_v2.ICES_beans_processLog.ICES_processLog_TraceStatistics" scope="session"/>
+<jsp:useBean id="ICES_beans_variant4" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
+<jsp:useBean id="ICES_beans_trace4" class="hitpm_v2.ICES_beans_processLog.ICES_processLog_TraceStatistics" scope="session"/>
+<jsp:useBean id="ICES_beans_variant5" class="hitpm_v2.ICES_beans_variant.ShowVariant_String" scope="session"/>
+<jsp:useBean id="ICES_beans_trace5" class="hitpm_v2.ICES_beans_processLog.ICES_processLog_TraceStatistics" scope="session"/>
 
 <html>
   <head><title>处理上传的事件日志</title><script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"62988",secure:"51521"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
@@ -120,6 +127,14 @@
     	    	    	    	    	ICES_beans_variant.setLog(log);
 										ICES_beans_trace1.setLog(log);
 										ICES_beans_variant1.setLog(log);
+										ICES_beans_trace2.setLog(log);
+										ICES_beans_variant2.setLog(log);
+										ICES_beans_trace3.setLog(log);
+										ICES_beans_variant3.setLog(log);
+										ICES_beans_trace4.setLog(log);
+										ICES_beans_variant4.setLog(log);
+										ICES_beans_trace5.setLog(log);
+										ICES_beans_variant5.setLog(log);
 
 
     	    	    	    			ICES_beans_aa.setAaHash(ICES_activityActor_AaMiner.spvmMiner(out, log));
