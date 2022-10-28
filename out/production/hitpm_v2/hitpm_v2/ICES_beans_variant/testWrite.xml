@@ -33,7 +33,7 @@
     <sequenceFlow id="p1_SF11_1" sourceRef="p1_UserTask_11" targetRef="p1_EndEvent"/>
   </process>
   <bpmndi:BPMNDiagram id="bd1">
-    <bpmndi:BPMNPlane id="BPMNPlane_bplane1" bpmnElement="bplane1">
+    <bpmndi:BPMNPlane id="BPMNPlane_bplane" bpmnElement="bplane">
       <bpmndi:BPMNEdge id="BPMNShape_p1_SF1_1" bpmnElement="p1_SF1_1">
         <omgdi:waypoint x="130.0" y="340.0"/>
         <omgdi:waypoint x="150.0" y="340.0"/>

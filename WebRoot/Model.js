@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+var Model = `<?xml version='1.0' encoding='UTF-8'?>
 <Definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef" exporter="Camunda Modeler" exporterVersion="5.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI">
   <process id="p1" name="processOne">
     <startEvent id="p1_StartEvent"/>
@@ -144,3 +144,4 @@
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </Definitions>
+`
