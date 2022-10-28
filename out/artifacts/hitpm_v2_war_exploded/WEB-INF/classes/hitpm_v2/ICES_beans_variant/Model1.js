@@ -1,0 +1,147 @@
+var Model1 = `<?xml version='1.0' encoding='UTF-8'?>
+<Definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef" exporter="Camunda Modeler" exporterVersion="5.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI">
+  <process id="p1" name="processOne">
+    <startEvent id="p1_StartEvent"/>
+    <endEvent id="p1_EndEvent"/>
+    <exclusiveGateway id="p1_ExclusiveGateway"/>
+    <userTask id="p1_UserTask_1" name="Apply Repair"/>
+    <userTask id="p1_UserTask_2" name="User Identification"/>
+    <userTask id="p1_UserTask_3" name="Intelligent Response"/>
+    <userTask id="p1_UserTask_4" name="Manual Interaction"/>
+    <userTask id="p1_UserTask_5" name="Release Order"/>
+    <userTask id="p1_UserTask_6" name="Order Assignment"/>
+    <userTask id="p1_UserTask_7" name="Repair"/>
+    <userTask id="p1_UserTask_8" name="Test Repair"/>
+    <userTask id="p1_UserTask_Else" name="Restart Repair"/>
+    <userTask id="p1_UserTask_9" name="Success"/>
+    <userTask id="p1_UserTask_10" name="Service Evaluation"/>
+    <userTask id="p1_UserTask_11" name="Archive"/>
+    <sequenceFlow id="p1_SF1_1" sourceRef="p1_StartEvent" targetRef="p1_UserTask_1"/>
+    <sequenceFlow id="p1_SF1_2" sourceRef="p1_UserTask_1" targetRef="p1_UserTask_2"/>
+    <sequenceFlow id="p1_SF2_1" sourceRef="p1_UserTask_2" targetRef="p1_UserTask_3"/>
+    <sequenceFlow id="p1_SF3_1" sourceRef="p1_UserTask_3" targetRef="p1_UserTask_4"/>
+    <sequenceFlow id="p1_SF4_1" sourceRef="p1_UserTask_4" targetRef="p1_UserTask_5"/>
+    <sequenceFlow id="p1_SF5_1" sourceRef="p1_UserTask_5" targetRef="p1_UserTask_6"/>
+    <sequenceFlow id="p1_SF6_1" sourceRef="p1_UserTask_6" targetRef="p1_UserTask_7"/>
+    <sequenceFlow id="p1_SF7_1" sourceRef="p1_UserTask_7" targetRef="p1_UserTask_8"/>
+    <sequenceFlow id="p1_SF8_1" sourceRef="p1_UserTask_8" targetRef="p1_ExclusiveGateway"/>
+    <sequenceFlow id="p1_SF8_main_2" sourceRef="p1_ExclusiveGateway" targetRef="p1_UserTask_10"/>
+    <sequenceFlow id="p1_SF8_else_3" sourceRef="p1_ExclusiveGateway" targetRef="p1_UserTask_Else"/>
+    <sequenceFlow id="p1_SF_Else_1" sourceRef="p1_UserTask_Else" targetRef="p1_UserTask_7"/>
+    <sequenceFlow id="p1_SF9_1" sourceRef="p1_UserTask_9" targetRef="p1_UserTask_10"/>
+    <sequenceFlow id="p1_SF10_1" sourceRef="p1_UserTask_10" targetRef="p1_UserTask_11"/>
+    <sequenceFlow id="p1_SF11_1" sourceRef="p1_UserTask_11" targetRef="p1_EndEvent"/>
+  </process>
+  <bpmndi:BPMNDiagram id="bd1">
+    <bpmndi:BPMNPlane id="BPMNPlane_bplane" bpmnElement="bplane">
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF1_1" bpmnElement="p1_SF1_1">
+        <omgdi:waypoint x="130.0" y="340.0"/>
+        <omgdi:waypoint x="150.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF1_2" bpmnElement="p1_SF1_2">
+        <omgdi:waypoint x="230.0" y="340.0"/>
+        <omgdi:waypoint x="250.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF2_1" bpmnElement="p1_SF2_1">
+        <omgdi:waypoint x="370.0" y="340.0"/>
+        <omgdi:waypoint x="390.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF3_1" bpmnElement="p1_SF3_1">
+        <omgdi:waypoint x="510.0" y="340.0"/>
+        <omgdi:waypoint x="530.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF4_1" bpmnElement="p1_SF4_1">
+        <omgdi:waypoint x="650.0" y="340.0"/>
+        <omgdi:waypoint x="670.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF5_1" bpmnElement="p1_SF5_1">
+        <omgdi:waypoint x="790.0" y="340.0"/>
+        <omgdi:waypoint x="810.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF6_1" bpmnElement="p1_SF6_1">
+        <omgdi:waypoint x="930.0" y="340.0"/>
+        <omgdi:waypoint x="950.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF7_1" bpmnElement="p1_SF7_1">
+        <omgdi:waypoint x="1070.0" y="340.0"/>
+        <omgdi:waypoint x="1090.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF8_1" bpmnElement="p1_SF8_1">
+        <omgdi:waypoint x="1210.0" y="340.0"/>
+        <omgdi:waypoint x="1230.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF8_main_2" bpmnElement="p1_SF8_main_2">
+        <omgdi:waypoint x="1270.0" y="340.0"/>
+        <omgdi:waypoint x="1290.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF8_else_3" bpmnElement="p1_SF8_else_3">
+        <omgdi:waypoint x="1250.0" y="360.0"/>
+        <omgdi:waypoint x="1250.0" y="470.0"/>
+        <omgdi:waypoint x="1210.0" y="470.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF_Else_1" bpmnElement="p1_SF_Else_1">
+        <omgdi:waypoint x="1090.0" y="470.0"/>
+        <omgdi:waypoint x="1010.0" y="470.0"/>
+        <omgdi:waypoint x="1010.0" y="380.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF9_1" bpmnElement="p1_SF9_1">
+        <omgdi:waypoint x="1410.0" y="340.0"/>
+        <omgdi:waypoint x="1430.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF10_1" bpmnElement="p1_SF10_1">
+        <omgdi:waypoint x="1550.0" y="340.0"/>
+        <omgdi:waypoint x="1570.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNShape_p1_SF11_1" bpmnElement="p1_SF11_1">
+        <omgdi:waypoint x="1650.0" y="340.0"/>
+        <omgdi:waypoint x="1670.0" y="340.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="BPMNShape_p1_StartEvent" bpmnElement="p1_StartEvent">
+        <omgdc:Bounds height="30.0" width="30.0" x="100.0" y="325.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_1" bpmnElement="p1_UserTask_1">
+        <omgdc:Bounds height="80.0" width="80.0" x="150.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_2" bpmnElement="p1_UserTask_2">
+        <omgdc:Bounds height="80.0" width="120.0" x="250.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_3" bpmnElement="p1_UserTask_3">
+        <omgdc:Bounds height="80.0" width="120.0" x="390.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_4" bpmnElement="p1_UserTask_4">
+        <omgdc:Bounds height="80.0" width="120.0" x="530.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_5" bpmnElement="p1_UserTask_5">
+        <omgdc:Bounds height="80.0" width="120.0" x="670.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_6" bpmnElement="p1_UserTask_6">
+        <omgdc:Bounds height="80.0" width="120.0" x="810.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_7" bpmnElement="p1_UserTask_7">
+        <omgdc:Bounds height="80.0" width="120.0" x="950.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_8" bpmnElement="p1_UserTask_8">
+        <omgdc:Bounds height="80.0" width="120.0" x="1090.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_ExclusiveGateway" bpmnElement="p1_ExclusiveGateway">
+        <omgdc:Bounds height="40.0" width="40.0" x="1230.0" y="320.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_Else" bpmnElement="p1_UserTask_Else">
+        <omgdc:Bounds height="80.0" width="120.0" x="1090.0" y="430.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_9" bpmnElement="p1_UserTask_9">
+        <omgdc:Bounds height="80.0" width="120.0" x="1290.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_10" bpmnElement="p1_UserTask_10">
+        <omgdc:Bounds height="80.0" width="120.0" x="1430.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_UserTask_11" bpmnElement="p1_UserTask_11">
+        <omgdc:Bounds height="80.0" width="80.0" x="1570.0" y="300.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_p1_EndEvent" bpmnElement="p1_EndEvent">
+        <omgdc:Bounds height="30.0" width="30.0" x="1670.0" y="325.0"/>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</Definitions>
+`
